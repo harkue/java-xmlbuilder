@@ -1,0 +1,39 @@
+# This workflow will build a Java project with Maven
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
+
+name: Codecov
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        java: [8, 9.0.x, 10]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run cobertura
+        run: mvn clean && mvn cobertura:cobertura
+
+      - name: Run Codecov
+        uses: codecov/codecov-action@v1.0.10
+        with:
+          # User defined upload name. Visible in Codecov UI
+          name: java-xmlbuilder
+          # Repository upload token - get it from codecov.io. Required only for private repositories
+          # token: # optional
+          # Path to coverage file to upload
+          # file: # optional
+          # Flag upload to group coverage metrics (e.g. unittests | integration | ui,chrome)
+          # flags: # optional
+          # Environment variables to tag the upload with (e.g. PYTHON | OS,PYTHON)
+          # env_vars: # optional
+          # Specify whether or not CI build should fail if Codecov runs into an error during upload
+          fail_ci_if_error: true # optional
