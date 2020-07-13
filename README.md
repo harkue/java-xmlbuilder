@@ -2,6 +2,7 @@ java-xmlbuilder
 ===============
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.jamesmurty.utils/java-xmlbuilder/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.jamesmurty.utils/java-xmlbuilder)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fharkue%2Fjava-xmlbuilder.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fharkue%2Fjava-xmlbuilder?ref=badge_shield)
 
 ![Build](https://github.com/jmurty/java-xmlbuilder/workflows/Build/badge.svg) ![Codecov](https://github.com/jmurty/java-xmlbuilder/workflows/Codecov/badge.svg)
 
@@ -117,6 +118,9 @@ create and manipulate XML documents like the following:
     </JetS3t>
 </Projects>
 ```
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fharkue%2Fjava-xmlbuilder.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fharkue%2Fjava-xmlbuilder?ref=badge_large)
 
 ### Create a New XML Document
 
